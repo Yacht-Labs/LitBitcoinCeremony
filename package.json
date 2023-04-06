@@ -1,0 +1,21 @@
+{
+  "name": "LitBitcoinCeremony",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "ethers-typescript-typings": "^0.0.4",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "ethers": "5.7.2",
+    "lit-swap-sdk": "file:/Users/henryminden/documents/yacht-lit-sdk",
+    "run": "^1.4.0",
+    "tsc": "^2.0.4",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

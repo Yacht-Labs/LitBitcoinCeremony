@@ -1,0 +1,783 @@
+BTC Ceremony: 
+txid 43112b3e737d897a909cdc47cf8389a8d232109af6ee3bbe12cd008b2434f479
+PKP BTC address: 1JrKjwF4zKejKkW8s1VXPUe59Pd7KoCCvZ
+PKP Public Key: 0x041d9e62cd7c7a2d82fd7463c0ac244fecb399f873c019c3512052851a18584c6e87c9ad964f2386477ca8191dc3fff9a2b9e13fdcbe026349f7671835a3034a3f
+Adam's Taproot 2: bc1pj3386kczn59yahvwvkwf9r9f20zw6zg2ulgm7dhpn4eycdppnyuqv47c77
+
+
+BTC TX 2:
+txId 1189a99cde69e2eb0152da1ec6c2ee5c64dc42fe316b00a583a790b2bdc75af3
+PKP BTC address: 178qip68QLBQH3WocCVdvW1EK3E5e2bi7t
+PKP publicKey: 0x04d3c8a65aabfb0e5ff7a529221398c3d047ec71860137b84902346b5e21211d27a3c907aba50e6b28a6e1adaf673179976ec9473a2bbfd7dd25b816b8894207fa
+Adam's Taproot: bc1p3xxdttztn9q30qksh8jm6haprjkknln7vl7gd930up3lcpnkaxsshykufv
+
+BTC TX 1: 
+txId a299fbd9e1da183f81842f73786da658485b1cec4c736b25ca192a037b3f1f2b
+
+PKP address: 13BhuM8imemmKg7npPD2AEixALLcGxBhc5
+PKP Pub Key: 0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4
+Adam's address: bc1qfgfwtrlhk22y09v4c86dtlg373eeqfu0ujp6ft
+
+Logs 1: 
+henryminden@Henrys-iMac LitBitcoinCeremony % ts-node ./runSendBTC.ts
+[Lit-JS-SDK] LitNodeClient config {
+  alertWhenUnauthorized: true,
+  minNodeCount: 6,
+  debug: true,
+  bootstrapUrls: [
+    'https://serrano.litgateway.com:7370',
+    'https://serrano.litgateway.com:7371',
+    'https://serrano.litgateway.com:7372',
+    'https://serrano.litgateway.com:7373',
+    'https://serrano.litgateway.com:7374',
+    'https://serrano.litgateway.com:7375',
+    'https://serrano.litgateway.com:7376',
+    'https://serrano.litgateway.com:7377',
+    'https://serrano.litgateway.com:7378',
+    'https://serrano.litgateway.com:7379'
+  ],
+  litNetwork: 'serrano'
+}
+[Lit-JS-SDK] BLS wasmExports loaded
+[Lit-JS-SDK] wasmECDSA loaded
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7370/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7370/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7371/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7371/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7372/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7372/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7373/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7373/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7374/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7374/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7375/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7375/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7376/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7376/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7377/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7377/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7378/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7378/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] handshakeWithSgx https://serrano.litgateway.com:7379/web/handshake
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7379/web/handshake and data { clientPublicKey: 'test' }
+[Lit-JS-SDK] lit is ready
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7371/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7379/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7372/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7374/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7373/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7377/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7378/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7376/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7370/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] getJsExecutionShares
+[Lit-JS-SDK] sendCommandToNode with url https://serrano.litgateway.com:7375/web/execute and data {
+  code: 'CiAgICBjb25zdCBnbyA9IGFzeW5jICgpID0+IHsKICAgICAgLy8gdGhpcyByZXF1ZXN0cyBhIHNpZ25hdHVyZSBzaGFyZSBmcm9tIHRoZSBMaXQgTm9kZQogICAgICAvLyB0aGUgc2lnbmF0dXJlIHNoYXJlIHdpbGwgYmUgYXV0b21hdGljYWxseSByZXR1cm5lZCBpbiB0aGUgSFRUUCByZXNwb25zZSBmcm9tIHRoZSBub2RlCiAgICAgIC8vIGFsbCB0aGUgcGFyYW1zICh0b1NpZ24sIHB1YmxpY0tleSwgc2lnTmFtZSkgYXJlIHBhc3NlZCBpbiBmcm9tIHRoZSBMaXRKc1Nkay5leGVjdXRlSnMoKSBmdW5jdGlvbgogICAgICB0cnkgewogICAgICBjb25zdCBzaWdTaGFyZSA9IGF3YWl0IExpdEFjdGlvbnMuc2lnbkVjZHNhKHt0b1NpZ246IG1lc3NhZ2UsIHB1YmxpY0tleSwgc2lnTmFtZX0pOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgLy8gY29uc29sZS5sb2coImVycm9yOiAiLCBlKTsKICAgICAgfQogICAgfTsKCiAgICBnbygpOwogIA',
+  ipfsId: undefined,
+  authSig: {
+    sig: '0x9804b8dac8624bd2ae560e09ebf6f531f40f83fa8998c948b078201e8d8599c212e93a996b6366bb17835c1ff512c2fdd266c8b98fde496fec0909ab0936566d1c',
+    derivedVia: 'web3.eth.personal.sign',
+    signedMessage: 'localhost wants you to sign in with your Ethereum account:\n' +
+      '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171\n' +
+      '\n' +
+      'This is a key for Yacht\n' +
+      '\n' +
+      'URI: https://localhost/login\n' +
+      'Version: 1\n' +
+      'Chain ID: 1\n' +
+      'Nonce: SLjZBNFPtoFymloB8\n' +
+      'Issued At: 2023-04-06T17:36:16.539Z',
+    address: '0x9D55D24aA6186d4a61Fa3BefeDBE4dD5dc0DC171'
+  },
+  jsParams: {
+    message: [
+      126,  73, 236, 172,  59,  86, 238, 38,
+      159, 170, 119,  48, 218, 149,  36, 43,
+       25, 176, 203, 201, 141, 209,  71, 81,
+      172, 233, 253, 196,  31, 146, 172, 89
+    ],
+    publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    sigName: 'sig1'
+  },
+  authMethods: []
+}
+[Lit-JS-SDK] responses [
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  },
+  {
+    status: 'fulfilled',
+    value: {
+      success: true,
+      signedData: [Object],
+      decryptedData: {},
+      response: '',
+      logs: ''
+    }
+  }
+]
+[Lit-JS-SDK] responseData [
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "73e9d914aa7a7c11112b1f474bc21755b16842212f6144130980afc27e174921",
+        "shareIndex": 5,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "55f595981f5326201eb802f7dae85a1fe5c96acba72a2e6ca6ab16d1d8091671",
+        "shareIndex": 9,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "f4ebb9dc3588843d46ebb3f576a0971def0eb8f0d71c6dd9dbd90f0038d5a4be",
+        "shareIndex": 10,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "8ba34b124bdbb63dc703bb06ec81011db23d0281572fe46478bde2292369354a",
+        "shareIndex": 8,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "f0fd4a5d8c22c51cd66ad5a4668f934c3f650ca73eafceb4912c489552929220",
+        "shareIndex": 7,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "1bfc85548d68c9e3a8c8ed5ff81fcb7fc2ab37609a2e28ea1d3b481db4cfb669",
+        "shareIndex": 6,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "57a29b24c16f9651081e624cc250c12fbbc7392f2841899ef87e6aae7d177d58",
+        "shareIndex": 1,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "cfcea96ad5b9cf2be33b37058296802edf226d85e7e025ae4778ac4e99b52e58",
+        "shareIndex": 4,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "f1471ddf41b1fd5c00a33764cc33ce9c6e44a456dd387d185f47c2209b32aa8b",
+        "shareIndex": 2,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  },
+  {
+    "success": true,
+    "signedData": {
+      "sig1": {
+        "sigType": "ECDSA",
+        "dataSigned": "7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59",
+        "signatureShare": "2eb59e7a90f3276450fad93de4242a01a2e4a1e72bc4797e142ae30f4cdeb1d3",
+        "shareIndex": 3,
+        "localX": "4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde",
+        "localY": "a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3",
+        "publicKey": "0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4",
+        "sigName": "sig1"
+      }
+    },
+    "decryptedData": {},
+    "response": "",
+    "logs": ""
+  }
+]
+[Lit-JS-SDK] sigShares [
+  {
+    sigType: 'ECDSA',
+    shareHex: '57a29b24c16f9651081e624cc250c12fbbc7392f2841899ef87e6aae7d177d58',
+    shareIndex: 1,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: 'f1471ddf41b1fd5c00a33764cc33ce9c6e44a456dd387d185f47c2209b32aa8b',
+    shareIndex: 2,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: '2eb59e7a90f3276450fad93de4242a01a2e4a1e72bc4797e142ae30f4cdeb1d3',
+    shareIndex: 3,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: 'cfcea96ad5b9cf2be33b37058296802edf226d85e7e025ae4778ac4e99b52e58',
+    shareIndex: 4,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: '73e9d914aa7a7c11112b1f474bc21755b16842212f6144130980afc27e174921',
+    shareIndex: 5,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: '1bfc85548d68c9e3a8c8ed5ff81fcb7fc2ab37609a2e28ea1d3b481db4cfb669',
+    shareIndex: 6,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: 'f0fd4a5d8c22c51cd66ad5a4668f934c3f650ca73eafceb4912c489552929220',
+    shareIndex: 7,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: '8ba34b124bdbb63dc703bb06ec81011db23d0281572fe46478bde2292369354a',
+    shareIndex: 8,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: '55f595981f5326201eb802f7dae85a1fe5c96acba72a2e6ca6ab16d1d8091671',
+    shareIndex: 9,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  },
+  {
+    sigType: 'ECDSA',
+    shareHex: 'f4ebb9dc3588843d46ebb3f576a0971def0eb8f0d71c6dd9dbd90f0038d5a4be',
+    shareIndex: 10,
+    localX: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+    localY: 'a0be55754bd558995fe771b8cf314277b9c2713d28fcdf8a9dd6bb2034ce06a3',
+    publicKey: '0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+    dataSigned: '7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+  }
+]
+[Lit-JS-SDK] shares is ["57a29b24c16f9651081e624cc250c12fbbc7392f2841899ef87e6aae7d177d58","f1471ddf41b1fd5c00a33764cc33ce9c6e44a456dd387d185f47c2209b32aa8b","2eb59e7a90f3276450fad93de4242a01a2e4a1e72bc4797e142ae30f4cdeb1d3","cfcea96ad5b9cf2be33b37058296802edf226d85e7e025ae4778ac4e99b52e58","73e9d914aa7a7c11112b1f474bc21755b16842212f6144130980afc27e174921","1bfc85548d68c9e3a8c8ed5ff81fcb7fc2ab37609a2e28ea1d3b481db4cfb669","f0fd4a5d8c22c51cd66ad5a4668f934c3f650ca73eafceb4912c489552929220","8ba34b124bdbb63dc703bb06ec81011db23d0281572fe46478bde2292369354a","55f595981f5326201eb802f7dae85a1fe5c96acba72a2e6ca6ab16d1d8091671","f4ebb9dc3588843d46ebb3f576a0971def0eb8f0d71c6dd9dbd90f0038d5a4be"]
+[Lit-JS-SDK] signature {
+  r: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+  s: '6129bbc931740a16060201cb22455d7e7978940e24df5f26185a32af28a5fd55',
+  recid: 0
+}
+[Lit-JS-SDK] Error parsing response as json.  Swallowing and returning as string. 
+litSignature:  {
+  r: '4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde',
+  s: '6129bbc931740a16060201cb22455d7e7978940e24df5f26185a32af28a5fd55',
+  recid: 0,
+  signature: '0x4f3f20b578d67666c20ebb7bc9208bb471d1d75a35db973c341b21cc8a343fde6129bbc931740a16060201cb22455d7e7978940e24df5f26185a32af28a5fd551b',
+  publicKey: '0x0479affae2e4c0b78e6e9e1674f2e69a8609dfaa868614bf935ae9b645b064aa50e99d8687f2a78eddcaa8643e2d08364e76fa24f9f9c9be7f4ddba145e84beeb4',
+  dataSigned: '0x7e49ecac3b56ee269faa7730da95242b19b0cbc98dd14751ace9fdc41f92ac59'
+}
+signedTransaction Transaction {
+  version: 1,
+  locktime: 0,
+  ins: [
+    {
+      hash: <Buffer e8 06 01 fc 4a c2 2f 4c 52 9c 54 f4 b0 aa ec f6 fd 7c 92 77 f6 3f 55 62 2a a2 d8 e7 db c4 7a 22>,
+      index: 30,
+      script: <Buffer 47 30 44 02 20 4f 3f 20 b5 78 d6 76 66 c2 0e bb 7b c9 20 8b b4 71 d1 d7 5a 35 db 97 3c 34 1b 21 cc 8a 34 3f de 02 20 61 29 bb c9 31 74 0a 16 06 02 01 ... 56 more bytes>,
+      sequence: 4294967295,
+      witness: []
+    }
+  ],
+  outs: [
+    {
+      script: <Buffer 00 14 4a 12 e5 8f f7 b2 94 47 95 95 c1 f4 d5 fd 11 f4 73 90 27 8f>,
+      value: 94078
+    }
+  ]
+}
